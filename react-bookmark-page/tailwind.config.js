@@ -28,10 +28,13 @@ export default {
       },
       backgroundSize: {
         'size-sm': '577px 203px',
-        'size-lg': '1000px 352px'
+        'size-xl': '1000px 352px',  
+        'size-lg': '800px 220px'
       },
       backgroundPosition: {
-        'first-tab': 'left -360px top 200px', 
+        'first-tab-xl': 'left -550px top 200px', 
+        'first-tab-sm': 'left -340px top 50px', 
+        'first-tab-lg': 'left -340px top 120px', 
       },
     },
   },
