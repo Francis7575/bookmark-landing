@@ -17,8 +17,8 @@ const Menu = () => {
     }
 
     return (
-        <nav>
-            <div className={`bg-gunmetal pt-[2.5rem] md:pt-0 absolute inset-0 md:static md:bg-transparent
+        <nav className='z-10'>
+            <div className={`bg-gunmetal pt-[2.5rem] md:pt-0 absolute inset-0 md:static md:bg-transparent 
                 px-8 md:px-0 ${isMenuOpened ? '' : 'hidden md:block'}`}>
                 <img src={logo} alt="Bookmark logo" className='md:hidden'/>
                 <ul className='mt-[2.5rem] md:mt-0 w-full md:flex md:items-center md:gap-8'>

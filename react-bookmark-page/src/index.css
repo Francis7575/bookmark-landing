@@ -73,12 +73,32 @@ ul {
     right: 12px;
 }
 
+@media (min-width: 48em) {
+    .rectangle::after {
+        width: 700px;
+        height: 180px;
+        border-radius: 45% 0 0 45%;
+        right: -450px;
+        top: 200px;
+    }
+}
+
 @media(min-width: 64em) {
     .rectangle::after {
         width: 1000px;
-        height: 352px;
+        height: 272px;
         border-radius: 45% 0 0 45%;
-        right: -450px;
+        right: -650px;
+        top: 200px;
+    }
+}
+
+@media(min-width: 81em) {
+    .rectangle::after {
+        width: 1000px;
+        height: 330px;
+        border-radius: 45% 0 0 45%;
+        right: -550px;
         top: 200px;
     }
 }

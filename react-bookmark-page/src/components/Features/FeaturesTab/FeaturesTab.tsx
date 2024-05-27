@@ -26,13 +26,15 @@ const FeaturesTab = () => {
             <div>
                 {Data.map((tab, index) => (
                     <div key={index}
-                        className={`bg-fixed bg-rectangle-pattern bg-no-repeat bg-size-sm bg-first-tab xl:bg-size-lg
+                        className={`bg-fixed bg-rectangle-pattern bg-no-repeat bg-size-sm bg-first-tab-sm 
+                        xl:bg-first-tab-xl lg:bg-size-lg xl:bg-size-xl lg:bg-first-tab-lg 
+                        ${index === 0 && 'pb-12'}
                         ${activeTab === index ? 'tab-content tab-content-active' : 'tab-content'}`}>
 
                         {activeTab === index && (
                             <div className="md:flex md:items-center md:justify-evenly xl:h-[550px]">
                                 <div>
-                                    <img src={tab.image}    
+                                    <img src={tab.image}
                                         className="max-w-[311px] lg:max-w-[450px] w-full h-auto mx-auto xl:max-w-[536px]"
                                         alt=""
                                     />
